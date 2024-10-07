@@ -6,6 +6,7 @@ dependencies:
 - pip
 - pip:
   - -e .[dev] --config-settings editable_mode=strict
+  # - -e .[dev] --config-settings editable_mode=compat
 
 
 
