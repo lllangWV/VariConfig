@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
 local_scheme="no-local-version"
-version_file = "parquetdb/_version.py"
+version_file = "variconfig/_version.py"
 
 
 [project]
@@ -44,6 +44,6 @@ Changelog = "https://github.com/romerogroup/VariConfig/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["parquetdb*"]
-exclude = ["parquetdb.tests*"]
+include = ["variconfig*"]
+exclude = ["variconfig.tests*"]
 
