@@ -88,6 +88,9 @@ class ConfigDict(dict):
         """
         self._update_attribute(key, value)
 
+    def __getattr__(self, name: str):
+        return self.__dict__.get(name)
+    
     def __setattr__(self, key, value) -> None:
         """
         Set an item as an attribute. Handles both ConfigDict and standard dict assignments.

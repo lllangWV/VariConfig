@@ -32,14 +32,11 @@ logging_config:
       mode: a
 
   loggers:
-    matgraphdb:
+    variconfig_dev:
       level: INFO
       handlers: [console]
       propagate: no
 
-    parquetdb:
-      level: CRITICAL
-      propagate: no
 
 
   # root:
