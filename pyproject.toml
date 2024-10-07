@@ -16,7 +16,7 @@ authors = [
 description = "VariConfig is a Python package for managing configuration files in a variety of formats and is able to handle variable substitution."
 readme = {file = "README.md", content-type = "text/markdown"}  # Ensure this matches the file used
 requires-python = ">=3.8"
-keywords = ["config", "variable", "yaml", "json", "variables", "substitution", "config-files"]
+keywords = ["config", "variable", "yaml", "json", "toml", "ini", "variables", "substitution", "config-files"]
 license = {file = "LICENSE"}
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -26,11 +26,11 @@ dynamic = ["version"]
 
 dependencies = [
     "python-dotenv",
+    "toml",
+    "PyYAML"
 ]
 
 [project.optional-dependencies]
-
-
 dev = ["sphinx", 
 "sphinx_rtd_theme"]
 
